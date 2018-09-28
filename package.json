@@ -1,0 +1,26 @@
+{
+  "name": "pigram",
+  "version": "0.1.0",
+  "description": "Pi Bash in Telegram Bot",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/derogab/pigram.git"
+  },
+  "keywords": [
+    "raspberry",
+    "pi",
+    "telegram",
+    "bot",
+    "bash"
+  ],
+  "author": "derogab",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/derogab/pigram/issues"
+  },
+  "homepage": "https://github.com/derogab/pigram#readme"
+}
