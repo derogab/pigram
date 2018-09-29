@@ -76,3 +76,7 @@ typings/
 # config.js file info
 # do not publish secret tokens
 config.js
+
+# pm2.json
+# do not publish personal paths
+pm2.json
