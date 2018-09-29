@@ -3,7 +3,7 @@
  * =====================
  * Write / and see commands of bot
  */
-module.exports = function(bot, config, request) {
+module.exports = function(bot, config, request, shell) {
     /**
      * Command: help
      * =====================

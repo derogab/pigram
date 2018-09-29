@@ -18,6 +18,7 @@ const Telegraf = require('telegraf');
 const config = require(__dirname + '/config');
 const path = require('path');
 const request = require('request');
+const shell = require('shelljs');
 
 /**
  * Init
@@ -32,9 +33,9 @@ const bot = new Telegraf(config.bot_token, {username: config.bot_username});
  * =====================
  * Core of bot
  */
-require(__dirname + '/routes/hears')(bot, config, request);
-require(__dirname + '/routes/command')(bot, config, request);
-require(__dirname + '/routes/inline_query')(bot, config, request);
+require(__dirname + '/routes/command')(bot, config, request, shell);
+require(__dirname + '/routes/hears')(bot, config, request, shell);
+require(__dirname + '/routes/inline_query')(bot, config, request, shell);
 
 /**
  * Polling
