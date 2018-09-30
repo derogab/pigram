@@ -24,4 +24,32 @@ module.exports = function(bot, config, request, shell) {
         help(ctx);
     }
     bot.command('start', start);
+
+    /**
+     * Command: status
+     * =====================
+     * Send pi status
+     */
+    function status(ctx) {
+
+        var pc = require('pc');
+        const humanizeDuration = require('humanize-duration');
+        const pretty = require('prettysize');
+
+        var status = "💻 *"+pc.hostname().name+"*";
+        status += "\n\n⏳ *"+humanizeDuration(pc.uptime().time * 1000)+"*";
+            var memory = pc.memory();
+        status += "\n\n🧠 Memory";
+        status += "\nFree: *"+pretty(memory.free)+"*";
+        status += "\nTotal: *"+pretty(memory.total)+"*";
+            var nets = pc.networkInterfaces();
+        status += "\n\n🌍 Network";
+        for(net in nets)
+            if(nets[net][0].address != "" && !nets[net][0].internal)
+                status += "\nIP: *"+nets[net][0].address+"*";
+        
+        ctx.replyWithMarkdown(status);
+
+    }
+    bot.command('status', status);
 };
