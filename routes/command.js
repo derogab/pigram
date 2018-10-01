@@ -39,6 +39,10 @@ module.exports = function(bot, config, request, shell) {
      */
     function status(ctx) {
 
+        if(ctx.message.from.username != config.admin){
+            return ctx.reply('⛔️'); // no auth
+        }
+
         var pc = require('pc');
         const humanizeDuration = require('humanize-duration');
         const pretty = require('prettysize');
