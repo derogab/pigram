@@ -10,7 +10,14 @@ module.exports = function(bot, config, request, shell) {
      * Send list of bot commands
      */
     function help(ctx) {
-        ctx.reply("Pi Bash in Telegram Bot\n\nOwner: @derogab\n\nMore info: https://github.com/derogab/pigram");
+
+        var reply = "*Pi* Bash in Tele*gram* Bot";
+        if(config.admin != ""){
+            reply += "\n\nOwner: @"+config.admin;
+        }
+        reply += "\n\nMore info: https://github.com/derogab/pigram";
+
+        ctx.reply(reply, {disable_web_page_preview: true, parse_mode: 'Markdown'});
     }
     bot.command('help', help);
 
@@ -48,7 +55,7 @@ module.exports = function(bot, config, request, shell) {
             if(nets[net][0].address != "" && !nets[net][0].internal)
                 status += "\nIP: *"+nets[net][0].address+"*";
         
-        ctx.replyWithMarkdown(status);
+        ctx.reply(status, {disable_web_page_preview: true, parse_mode: 'Markdown'});
 
     }
     bot.command('status', status);
