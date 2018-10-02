@@ -5,7 +5,7 @@
  *
  * @author:     Gabriele De Rosa [@derogab]
  * @file:       bot.js
- * @version:    0.1.0
+ * @version:    1.0.0
  * @link        GitHub Repo:  https://github.com/derogab/pigram
  */
 
