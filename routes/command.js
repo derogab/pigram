@@ -46,6 +46,8 @@ module.exports = function(bot, config, request, shell) {
         var pc = require('pc');
         const humanizeDuration = require('humanize-duration');
         const pretty = require('prettysize');
+        const deasync = require('deasync');
+        const publicIp = require('public-ip');
 
         var status = "💻 *"+pc.hostname().name+"*";
         status += "\n\n⏳ *"+humanizeDuration(pc.uptime().time * 1000)+"*";
@@ -53,11 +55,24 @@ module.exports = function(bot, config, request, shell) {
         status += "\n\n🧠 Memory";
         status += "\nFree: *"+pretty(memory.free)+"*";
         status += "\nTotal: *"+pretty(memory.total)+"*";
+        status += "\n\n🏠 LAN";
             var nets = pc.networkInterfaces();
-        status += "\n\n🌍 Network";
         for(net in nets)
             if(nets[net][0].address != "" && !nets[net][0].internal)
                 status += "\nIP: *"+nets[net][0].address+"*";
+        
+        var sync = true;
+        var public_ip = false;
+        publicIp.v4().then(ip => {
+            public_ip = ip;
+            sync = false;
+        });
+        while(sync) { deasync.sleep(100); }
+
+        if(public_ip){
+            status += "\n\n🌍 Network";
+            status += "\nIP: *"+public_ip+"*";
+        }
         
         ctx.reply(status, {disable_web_page_preview: true, parse_mode: 'Markdown'});
 
