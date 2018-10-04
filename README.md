@@ -21,7 +21,7 @@ Get more info [here](https://core.telegram.org/bots#3-how-do-i-create-a-bot).
 ### Download
 Download the source using `git` or [directly](https://github.com/derogab/pigram/archive/master.zip).
 ```shell
-git clone https://github.com/derogab/pigram && cd pigram
+git clone https://github.com/derogab/pigram
 ```
 
 ### Install dependencies
