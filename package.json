@@ -1,6 +1,6 @@
 {
   "name": "pigram",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Pi Bash in Telegram Bot",
   "main": "bot.js",
   "scripts": {
