@@ -29,9 +29,8 @@
     "humanize-duration": "^3.15.3",
     "path": "^0.12.7",
     "pc": "0.0.6",
-    "pm2": "^3.1.3",
+    "pm2": "^3.2.1",
     "prettysize": "^1.1.0",
-    "public-ip": "^2.4.0",
     "request": "^2.88.0",
     "shelljs": "^0.8.2",
     "telegraf": "^3.24.0"

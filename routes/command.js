@@ -47,7 +47,6 @@ module.exports = function(bot, config, request, shell) {
         const humanizeDuration = require('humanize-duration');
         const pretty = require('prettysize');
         const deasync = require('deasync');
-        const publicIp = require('public-ip');
 
         var status = "💻 *"+pc.hostname().name+"*";
         status += "\n\n⏳ *"+humanizeDuration(pc.uptime().time * 1000)+"*";
@@ -63,7 +62,7 @@ module.exports = function(bot, config, request, shell) {
         
         var sync = true;
         var public_ip = false;
-        publicIp.v4().then(ip => {
+        pc.publicIP().then(ip => {
             public_ip = ip;
             sync = false;
         });
