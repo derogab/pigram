@@ -1,6 +1,6 @@
 # PiGram
 
-[![Version](https://img.shields.io/badge/version-1.1.1-brightgreen.svg)](https://github.com/derogab/pigram)
+[![Version](https://img.shields.io/badge/version-1.1.2-brightgreen.svg)](https://github.com/derogab/pigram)
 [![GitHub stars](https://img.shields.io/github/stars/derogab/pigram.svg)](https://github.com/derogab/pigram/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/derogab/pigram.svg)](https://github.com/derogab/pigram/network)
 [![GitHub issues](https://img.shields.io/github/issues/derogab/pigram.svg)](https://github.com/derogab/pigram/issues)
