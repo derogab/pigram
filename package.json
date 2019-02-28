@@ -33,6 +33,6 @@
     "request": "^2.88.0",
     "shelljs": "^0.8.2",
     "systeminformation": "^3.45.7",
-    "telegraf": "^3.24.0"
+    "telegraf": "^3.27.1"
   }
 }
