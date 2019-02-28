@@ -25,7 +25,7 @@
   "homepage": "https://github.com/derogab/pigram#readme",
   "dependencies": {
     "deasync": "^0.1.13",
-    "humanize-duration": "^3.15.3",
+    "humanize-duration": "^3.17.0",
     "path": "^0.12.7",
     "pm2": "^3.2.2",
     "prettysize": "^1.1.0",
