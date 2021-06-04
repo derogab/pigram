@@ -5,7 +5,7 @@
  *
  * @author:     Gabriele De Rosa [@derogab]
  * @file:       bot.js
- * @version:    1.1.2
+ * @version:    1.1.4
  * @link        GitHub Repo:  https://github.com/derogab/pigram
  */
 
@@ -14,11 +14,8 @@
  * =====================
  * All config and required open source libs
  */
-const Telegraf = require('telegraf');
+const { Telegraf } = require('telegraf');
 const config = require(__dirname + '/config');
-const path = require('path');
-const request = require('request');
-const shell = require('shelljs');
 
 /**
  * Init
@@ -29,13 +26,21 @@ const shell = require('shelljs');
 const bot = new Telegraf(config.bot_token, {username: config.bot_username});
 
 /**
+ * Graceful stop
+ * =====================
+ * Enable graceful stop
+ */
+process.once('SIGINT', () => bot.stop('SIGINT'));
+process.once('SIGTERM', () => bot.stop('SIGTERM'));
+
+/**
  * Router
  * =====================
  * Core of bot
  */
-require(__dirname + '/routes/command')(bot, config, request, shell);
-require(__dirname + '/routes/hears')(bot, config, request, shell);
-require(__dirname + '/routes/inline_query')(bot, config, request, shell);
+require(__dirname + '/routes/command')(bot, config);
+require(__dirname + '/routes/hears')(bot, config);
+require(__dirname + '/routes/inline_query')(bot, config);
 
 /**
  * Polling
