@@ -3,7 +3,9 @@
  * =====================
  * Receive text messages
  */
-module.exports = function (bot, config, request, shell) {
+const shell = require('shelljs');
+
+module.exports = function (bot, config) {
 
     bot.on('text', (ctx) => {
 
