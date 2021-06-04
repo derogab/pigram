@@ -25,9 +25,13 @@ git clone https://github.com/derogab/pigram
 ```
 
 ### Install dependencies
-Enter in the _pigram_ folder and install all dependencies.
+Install PM2
+```
+yarn global add pm2
+```
+In the _pigram_ folder, install all dependencies.
 ```shell
-cd pigram && npm install
+yarn
 ```
 
 ### Configure
