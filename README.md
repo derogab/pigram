@@ -8,9 +8,6 @@
 [![Ko-Fi](https://img.shields.io/badge/Sponsor-Ko--Fi-9cf?style=flat-square)](https://ko-fi.com/derogab)
 
 
-
-
-
 PiGram is a **Pi Bash in Telegram Bot**.
 
 - [Create a Bot](#create-a-bot)
@@ -30,10 +27,6 @@ git clone https://github.com/derogab/pigram
 ```
 
 ### Install dependencies
-Install PM2 globally.
-```
-yarn global add pm2
-```
 In the _pigram_ folder, install all dependencies.
 ```shell
 yarn
@@ -45,6 +38,15 @@ You can easily copy template files (`.tmpl`) and then edit them with your config
 
 ### Run
 Finally, start the bot.
+```shell
+node bot.js
+```
+Or, if you prefer, use [PM2](https://github.com/Unitech/pm2):
+###### Install PM2 globally
+```shell
+yarn global add pm2 
+```
+###### Run using PM2
 ```shell
 pm2 start pm2.json
 ```
