@@ -1,10 +1,15 @@
 # PiGram
 
-[![Version](https://img.shields.io/badge/version-1.1.2-brightgreen.svg)](https://github.com/derogab/pigram)
-[![GitHub stars](https://img.shields.io/github/stars/derogab/pigram.svg)](https://github.com/derogab/pigram/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/derogab/pigram.svg)](https://github.com/derogab/pigram/network)
-[![GitHub issues](https://img.shields.io/github/issues/derogab/pigram.svg)](https://github.com/derogab/pigram/issues)
-[![Donate](https://img.shields.io/badge/donate-paypal-blue.svg)](https://paypal.me/derogab)
+[![GitHub package.json version](https://img.shields.io/github/package-json/v/derogab/pigram?style=flat-square)](https://github.com/derogab/pigram)
+[![GitHub stars](https://img.shields.io/github/stars/derogab/pigram.svg?style=flat-square)](https://github.com/derogab/pigram/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/derogab/pigram.svg?style=flat-square)](https://github.com/derogab/pigram/network)
+[![GitHub issues](https://img.shields.io/github/issues/derogab/pigram.svg?style=flat-square)](https://github.com/derogab/pigram/issues)
+[![Patreon](https://img.shields.io/badge/Sponsor-Patreon-orange?style=flat-square)](https://patreon.com/derogab)
+[![Ko-Fi](https://img.shields.io/badge/Sponsor-Ko--Fi-9cf?style=flat-square)](https://ko-fi.com/derogab)
+
+
+
+
 
 PiGram is a **Pi Bash in Telegram Bot**.
 
@@ -25,7 +30,7 @@ git clone https://github.com/derogab/pigram
 ```
 
 ### Install dependencies
-Install PM2
+Install PM2 globally.
 ```
 yarn global add pm2
 ```
