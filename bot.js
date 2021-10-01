@@ -47,4 +47,4 @@ require(__dirname + '/routes/inline_query')(bot, config);
  * =====================
  * Telegraf Socket
  */
-bot.startPolling();
+bot.launch();
