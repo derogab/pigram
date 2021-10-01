@@ -6,11 +6,13 @@
 version: 2
 updates:
 
-  # Maintain dependencies for yarn
+  # Maintain dependencies for NPM
   - package-ecosystem: 'npm'
     directory: '/'
     target-branch: 'dev'
     schedule:
-      interval: 'weekly'
+      interval: 'daily'
+    assignees:
+      - 'derogab'
     labels:
       - 'dependencies'
