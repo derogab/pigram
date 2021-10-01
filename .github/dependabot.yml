@@ -7,7 +7,7 @@ version: 2
 updates:
 
   # Maintain dependencies for yarn
-  - package-ecosystem: 'yarn'
+  - package-ecosystem: 'npm'
     directory: '/'
     target-branch: 'dev'
     schedule:
