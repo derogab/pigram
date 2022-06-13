@@ -32,6 +32,6 @@
     "public-ip": "^4.0.4",
     "shelljs": "^0.8.5",
     "systeminformation": "^5.11.16",
-    "telegraf": "^4.8.3"
+    "telegraf": "^4.8.5"
   }
 }
