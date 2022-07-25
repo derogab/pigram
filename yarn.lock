@@ -408,10 +408,10 @@ systeminformation@^5.11.22:
   resolved "https://registry.yarnpkg.com/systeminformation/-/systeminformation-5.11.22.tgz#52eb78fd6bb48eef372f502b494ff59aacf82c02"
   integrity sha512-sBZJ/WBCf2vDLeMZaEyVuo+aXylOSmNHHB2cX0jHULFxSBLXHX+QUHYrCvmz+YiflKY3bsahVWX7vwuz1p1QZA==
 
-telegraf@^4.8.5:
-  version "4.8.5"
-  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-4.8.5.tgz#0df238ae01e44f98ce28785f5d465127d712151b"
-  integrity sha512-BTnXBvQ2sRnPCuDvMCvZhMfanJxycWNmAEd+23yBliKXddqt/fFWkj/2OQMD/L3YPD1c1elK5F4WEkJUW3khQQ==
+telegraf@^4.8.6:
+  version "4.8.6"
+  resolved "https://registry.yarnpkg.com/telegraf/-/telegraf-4.8.6.tgz#6a127be631469effbd41c782dd7fe699ae07f0c4"
+  integrity sha512-FixxnJBrS8ECk/Wmo3VXzkTOlY2A1gsdIORJ//cdh3PcVqAL7wgcvLKjkEPI0IyxdFfRqTrWQEOn9h++revQaA==
   dependencies:
     abort-controller "^3.0.0"
     debug "^4.3.3"
