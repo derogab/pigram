@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/derogab/pigram#readme",
   "dependencies": {
-    "humanize-duration": "^3.27.2",
+    "humanize-duration": "^3.27.3",
     "prettysize": "^2.0.0",
     "public-ip": "^4.0.4",
     "shelljs": "^0.8.5",
