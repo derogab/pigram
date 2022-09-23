@@ -44,13 +44,13 @@ module.exports = function(bot, config) {
         }
 
         const si = require('systeminformation');
-        const publicIp = require('public-ip');
+        const publicIp = require('qiao-get-ip');
         const humanizeDuration = require('humanize-duration');
         const pretty = require('prettysize');
         
         // Get info
         var data = await si.getAllData();
-        var public_ip = await publicIp.v4();
+        var public_ip = await publicIp.getIp();
 
         // Init
         var status = "";
