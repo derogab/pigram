@@ -29,7 +29,7 @@ git clone https://github.com/derogab/pigram
 ### Install dependencies
 In the _pigram_ folder, install all dependencies.
 ```shell
-yarn
+npm install
 ```
 
 ### Configure
@@ -44,7 +44,7 @@ node bot.js
 Or, if you prefer, use [PM2](https://github.com/Unitech/pm2):
 ###### Install PM2 globally
 ```shell
-yarn global add pm2 
+npm install -g pm2 
 ```
 ###### Run using PM2
 ```shell
