@@ -1,6 +1,6 @@
 {
   "name": "pigram",
-  "version": "1.1.7",
+  "version": "1.1.8",
   "description": "Pi Bash in Telegram Bot",
   "main": "bot.js",
   "scripts": {
@@ -29,12 +29,12 @@
   "dependencies": {
     "humanize-duration": "3.27.3",
     "prettysize": "2.0.0",
-    "qiao-get-ip": "0.2.6",
+    "qiao-get-ip": "0.3.1",
     "shelljs": "0.8.5",
-    "systeminformation": "5.12.6",
-    "telegraf": "4.9.2"
+    "systeminformation": "5.12.7",
+    "telegraf": "4.10.0"
   },
   "devDependencies": {
-    "pm2": "5.2.0"
+    "pm2": "5.2.2"
   }
 }
