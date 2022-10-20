@@ -4,8 +4,6 @@
 [![GitHub stars](https://img.shields.io/github/stars/derogab/pigram.svg?style=flat-square)](https://github.com/derogab/pigram/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/derogab/pigram.svg?style=flat-square)](https://github.com/derogab/pigram/network)
 [![GitHub issues](https://img.shields.io/github/issues/derogab/pigram.svg?style=flat-square)](https://github.com/derogab/pigram/issues)
-[![Patreon](https://img.shields.io/badge/Sponsor-Patreon-orange?style=flat-square)](https://patreon.com/derogab)
-[![Ko-Fi](https://img.shields.io/badge/Sponsor-Ko--Fi-9cf?style=flat-square)](https://ko-fi.com/derogab)
 
 
 PiGram is a **Pi Bash in Telegram Bot**.
