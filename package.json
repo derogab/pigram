@@ -29,7 +29,7 @@
   "dependencies": {
     "humanize-duration": "3.28.0",
     "prettysize": "2.0.0",
-    "qiao-get-ip": "2.0.4",
+    "qiao-get-ip": "3.0.2",
     "shelljs": "0.8.5",
     "systeminformation": "5.17.12",
     "telegraf": "4.12.2"
