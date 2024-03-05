@@ -32,7 +32,7 @@
     "qiao-get-ip": "4.5.0",
     "shelljs": "0.8.5",
     "systeminformation": "5.22.0",
-    "telegraf": "4.16.2"
+    "telegraf": "4.16.3"
   },
   "devDependencies": {
     "pm2": "5.3.1"
