@@ -50,7 +50,7 @@ module.exports = function(bot, config) {
         
         // Get info
         var data = await si.getAllData();
-        var public_ip = await publicIp.getIp();
+        var public_ip = await publicIp.getIP();
 
         // Init
         var status = "";
