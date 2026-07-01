@@ -35,6 +35,6 @@
     "telegraf": "4.16.3"
   },
   "devDependencies": {
-    "pm2": "6.0.14"
+    "pm2": "7.0.3"
   }
 }
